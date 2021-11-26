@@ -1,1 +1,1 @@
-Folder with annotated images for training in XXX format
+Folder with annotated images for training in PNG format
