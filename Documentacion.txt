@@ -1,0 +1,49 @@
+Datasets utilizados
+
+	UMA-SAR 
+		Imágenes RGB y térmicas tomadas en entornos de catástrofe.
+		https://www.uma.es/robotics-and-mechatronics/cms/menu/robotica-y-mecatronica/datasets/
+		#Artículo
+		      @article{MoralesUMASAR:2021,
+             		author = {Morales, Jes\'us and V\'azquez-Mart\'in, Ricardo and Mandow, Anthony and Morilla-Cabello, David and Garc\'ia-Cerezo, Alfonso},
+              		title = {The {UMA-SAR} Dataset: Multimodal Data Collection from a Ground Vehicle During Outdoor Disaster Response Training Exercises},
+            		journal = {The International Journal of Robotics Research},
+             		volume = {40},
+             		number = {6-7},
+             		pages  = {835--847},
+               		year = {2021},
+                	doi = {10.1177/02783649211004959},
+      			}
+	Cityscapes
+		Imágenes RGB y mapas de profundidad correspondientes a entornos urbanos
+		https://www.cityscapes-dataset.com/
+		#Artículo
+			@misc{cordts2016cityscapes,
+      			title={The Cityscapes Dataset for Semantic Urban Scene Understanding}, 
+      			author={Marius Cordts and Mohamed Omran and Sebastian Ramos and Timo Rehfeld and Markus Enzweiler and Rodrigo Benenson and Uwe Franke and Stefan Roth and Bernt Schiele},
+      			year={2016},
+      			eprint={1604.01685},
+      			archivePrefix={arXiv},
+      			primaryClass={cs.CV}
+			}
+
+Arquitectura de la red
+	AdapNet++ y AdapNet++ con bloque SSMA
+		https://github.com/DeepSceneSeg
+		#Artículo
+			@article{valada19ijcv,
+         		author = {Valada, Abhinav and Mohan, Rohit and Burgard, Wolfram},
+         		title = {Self-Supervised Model Adaptation for Multimodal Semantic Segmentation},
+         		journal = {International Journal of Computer Vision (IJCV)},
+         		year = {2019},
+         		month = {jul},
+         		doi = {10.1007/s11263-019-01188-y},
+         		note = {Special Issue: Deep Learning for Robotic Vision},
+         		issn = {1573-1405},
+         		day = {08}}
+			}
+
+Las imágenes del dataset UMA-SAR se han etiquetado utilizando CVAT (https://cvat.org/).
+Las imágenes del dataset de Cityscapes se han etiquetado mediante los scripts proporcionados 
+por los autores. En estas etiquetas es necesario cambiar el nivel de gris 255(fondo de la imagen)
+por el nivel de gris 0 antes de ser utilizadas como input de AdapNet++.
